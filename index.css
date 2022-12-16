@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    min-width: 300px;
+    background: #FFFFFF;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+h1{
+    margin: 0
+}
+
+p{
+    margin: 0
+}
+
+.bio{
+    font-size: 1.125rem;
+    color: #B7B7B7;
+    text-transform: none;
+}
+
+
+/* Layout */
+
+img{
+    object-fit: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    height: 3em;
+    padding: 1em;
+}
+
+.container{  
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+
+.card{ 
+    background: #F83574;
+    min-height: 70vh;
+    height: 20em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.2em;
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+/* footer */
+
+footer{
+    height:20vh;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Badge Layout */
+.dislike{
+    border-image: linear-gradient(to right, #F9655C ,#F83574) 20%;
+    color: #F9655C;  
+}
+
+.like{
+    border-image: linear-gradient(to right, #29D78A ,#6EF2F2) 20%;
+    color: #29D78A;
+}
+
+.choice{
+    font-size: 4rem;
+    border: .12em solid;
+    text-transform: uppercase;
+    
+    padding: .0.1em;
+    position: absolute;
+    top: 0;
+    margin-top: .6em;
+    
+    transform: rotate(-20deg);   
+    border-radius: inherit;
+}
+
+/* Buttons */
+
+button{
+    margin: 1em;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+   
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+#like:hover{
+   background:  #DBFFF4;
+   
+}
+
+#dislike:hover{
+    background: #FFE7EF;
+   
+}
+
+button:active{
+    transform: scale(1.05);
+}
+
+
